@@ -1,2 +1,3 @@
 # Freeducation
-The source code of Freeducation website of Scholarship Crowdfunding
+
+Freeducation adalah website scholarship crowdfunding yang bertujuan untuk membantu orang-orang yang terkendala dalam pendidikan dari sisi finansial

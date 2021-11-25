@@ -1,12 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width,initial-scale=1'>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	<title>Svelte app</title>
+	<title>Freeducation - Scholarship Crowdfunding</title>
 
 	<link rel='icon' type='image/png' href='/favicon.png'>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7CRoboto+Slab:400,700"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="/assets/css/xsIcon.css">
+	<link rel="stylesheet" href="/assets/css/isotope.css">
+	<link rel="stylesheet" href="/assets/css/magnific-popup.css">
+	<link rel="stylesheet" href="/assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="/assets/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="/assets/css/animate.css">
+
+
+	<!--For Plugins external css-->
+	<link rel="stylesheet" href="/assets/css/plugins.css" />
+
+	<!--Theme custom css -->
+	<link rel="stylesheet" href="/assets/css/style.css">
+
+	<!--Theme Responsive css-->
+	<link rel="stylesheet" href="/assets/css/responsive.css" />
 	<link rel='stylesheet' href='/global.css'>
 	<link rel='stylesheet' href='/build/bundle.css'>
 
@@ -14,5 +38,20 @@
 </head>
 
 <body>
+
+	<div id="root"></div>
+
+	<script>
+		document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+			anchor.addEventListener('click', function (e) {
+				e.preventDefault();
+
+				document.querySelector(this.getAttribute('href')).scrollIntoView({
+					behavior: 'smooth'
+				});
+			});
+		});
+	</script>
 </body>
+
 </html>

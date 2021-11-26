@@ -913,7 +913,7 @@ blockquote {
   display: none; }
 
 .xs-welcome-content {
-  min-height: 900px;
+  min-height: 110vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

@@ -1,62 +1,193 @@
-<!-- footer section start -->
-<footer class="xs-footer-section">
-    <div class="container">
-        <div class="xs-footer-top-layer">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 footer-widget xs-pr-20">
-                    <a href="index.html" class="xs-footer-logo">
-                        <img src="assets/images/Footer_Logo.png" alt="">
-                    </a>
-                    <p>Freeducation adalah sebuah platform <i>open source</i> untuk membantu saudara-saudara kita yang ada di tanah air dari sisi finansial untuk mengenyam pendidikan.
-                       </p>
-                    <ul class="xs-social-list-v2">
-                        <li><a href="" class="color-facebook"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="" class="color-twitter"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="" class="color-dribbble"><i class="fab fa-instagram"></i></a></li>
-                    </ul><!-- .xs-social-list END -->
-                </div>
-                <div class="col-lg-4 col-md-6 footer-widget">
-                    <h3 class="widget-title">Tentang Kami</h3>
-                    <ul class="xs-footer-list">
-                        <li><a href="index.html">Siapa kami?</a></li>
-                        <li><a href="#">Bagaimana kami bekerja?</a></li>
-                        <li><a href="#">Karir</a></li>
-                        <li><a href="#">Blog</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-4 col-md-4 footer-widget">
-                    <h3 class="widget-title">Contact Us</h3>
-                    <ul class="xs-info-list">
-                        <li><i class="fas fa-home"></i>Jakarta, Indonesia</li>
-                        <li><i class="fas fa-phone"></i>+62 821 2560 9413</li>
-                        <li><i class="fas fa-envelope"></i><a
-                                href="mailto:yourname@domain.com">id.freeducation@gmail.com</a></li>
-                    </ul><!-- .xs-list-with-icon END -->
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="xs-copyright">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="xs-copyright-text">
-                        <p>&copy; Copyright 2021 Freeducation - All Right's Reserved</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <nav class="xs-footer-menu">
-                        <ul>
-                            <li><a href="#">FAQ</a></li>
-                            <li><a href="#">Help Desk</a></li>
-                            <li><a href="#">Support</a></li>
+<body>
+       <section class="h-100 w-100 bg-white" style="box-sizing: border-box">
+		<style>
+			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+            
+            .footer-2-1 {
+                background-color: #1976D2;
+                min-height: 100vh;
+            }
+
+			.footer-2-1 .list-space {
+				margin-bottom: 1.25rem;
+			}
+
+			.footer-2-1 .footer-text-title {
+				font: 600 1.5rem Poppins, sans-serif;
+				margin-bottom: 1.5rem;
+                color: white;
+			}
+
+			.footer-2-1 .list-menu {
+				color: white;
+				text-decoration: none !important;
+			}
+
+			.footer-2-1 .list-menu:hover {
+				color: white;
+			}
+
+			.footer-2-1 hr.hr {
+				margin: 0;
+				border: 0;
+				border-top: 1px solid rgba(0, 0, 0, 0.1);
+			}
+
+			.footer-2-1 .border-color {
+				color: white;
+			}
+
+			.footer-2-1 .footer-link {
+				color: white;
+			}
+
+			.footer-2-1 .footer-link:hover {
+				color: white;
+			}
+
+			.footer-2-1 .social-media-c:hover circle,
+			.footer-2-1 .social-media-p:hover path {
+				fill: white;
+			}
+
+			.footer-2-1 .footer-info-space {
+				padding-top: 3rem;
+			}
+
+			.footer-2-1 .list-footer {
+				padding: 5rem 1rem 3rem 1rem;
+			}
+
+			.footer-2-1 .info-footer {
+				padding: 0 1rem 3rem;
+			}
+
+			@media (min-width: 576px) {
+				.footer-2-1 .list-footer {
+					padding: 5rem 2rem 3rem 2rem;
+				}
+
+				.footer-2-1 .info-footer {
+					padding: 0 2rem 3rem;
+				}
+			}
+
+			@media (min-width: 768px) {
+				.footer-2-1 .list-footer {
+					padding: 5rem 4rem 6rem 4rem;
+				}
+
+				.footer-2-1 .info-footer {
+					padding: 0 4rem 3rem;
+				}
+			}
+
+			@media (min-width: 992px) {
+				.footer-2-1 .list-footer {
+					padding: 5rem 6rem 6rem 6rem;
+				}
+
+				.footer-2-1 .info-footer {
+					padding: 0 6rem 3rem;
+				}
+			}
+
+            .footer-caption {
+                    color: white;
+                }
+		</style>
+
+		<div class="footer-2-1 container-xxl mx-auto position-relative p-0" style="font-family: 'Poppins', sans-serif">
+			<div class="list-footer">
+				<div class="row gap-md-0 gap-3">
+					<div class="col-lg-3 col-md-6 px-5">
+							<div>
+                                <a href="index.html" class="xs-footer-logo">
+                                    <img src="assets/images/Footer_Logo.png" alt="">
+                                </a>
+                                <p class="footer-caption">Freeducation adalah sebuah platform <i>open source</i> untuk membantu saudara-saudara kita yang ada di tanah air dari sisi finansial untuk mengenyam pendidikan.
+                                   </p>
+                            </div>
+					</div>
+                    <div class="col-lg-3 col-md-6 px-5">
+						<h2 class="footer-text-title">Product</h2>
+						<nav class="list-unstyled">
+							<li class="list-space">
+								<a href="" class="list-menu">Real Time Analytic</a>
+							</li>
+							<li class="list-space">
+								<a href="" class="list-menu">Easy to Operate</a>
+							</li>
+							<li class="list-space">
+								<a href="" class="list-menu">Full Secured</a>
+							</li>
+							<li class="list-space">
+								<a href="" class="list-menu">Analytic Tool</a>
+							</li>
+							<li class="list-space">
+								<a href="" class="list-menu">Story</a>
+							</li>
+						</nav>
+					</div>
+					<div class="col-lg-3 col-md-6 px-5">
+						<h2 class="footer-text-title">Company</h2>
+						<nav class="list-unstyled">
+							<li class="list-space">
+								<a href="" class="list-menu">Contact Us</a>
+							</li>
+							<li class="list-space">
+								<a href="" class="list-menu">Blog</a>
+							</li>
+							<li class="list-space">
+								<a href="" class="list-menu">Culture</a>
+							</li>
+							<li class="list-space">
+								<a href="" class="list-menu">Security</a>
+							</li>
+						</nav>
+					</div>
+					<div class="col-lg-3 col-md-6 px-5">
+						<h2 class="footer-text-title">Support</h2>
+						<nav class="list-unstyled">
+							<li class="list-space">
+								<a href="" class="list-menu">Getting Started</a>
+							</li>
+							<li class="list-space">
+								<a href="" class="list-menu">Help Center</a>
+							</li>
+							<li class="list-space">
+								<a href="" class="list-menu">Server Status</a>
+							</li>
+						</nav>
+					</div>
+				</div>
+			</div>
+
+			<div class="border-color info-footer">
+				<div class="">
+					<hr class="hr" />
+				</div>
+				<div class="mx-auto d-flex flex-column flex-lg-row align-items-center footer-info-space gap-4">
+					<div class="d-flex title-font font-medium align-items-center gap-4">
+						<ul class="xs-social-list-v2">
+                            <li><a href="" class="color-facebook"><i class="fab fa-facebook"></i></a></li>
+                            <li><a href="" class="color-twitter"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/freeducation.id/" class="color-dribbble"><i class="fab fa-instagram"></i></a></li>
                         </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="xs-back-to-top-wraper">
-        <a href="#" class="xs-back-to-top"><i class="fas fa-angle-up"></i></a>
-    </div>
-</footer>
+					</div>
+					<nav class="mx-auto d-flex flex-wrap align-items-center justify-content-center gap-4">
+						<a href="" class="footer-link" style="text-decoration: none">Terms of Service</a>
+						<span>|</span>
+						<a href="" class="footer-link" style="text-decoration: none">Privacy Policy</a>
+						<span>|</span>
+						<a href="" class="footer-link" style="text-decoration: none">Licenses</a>
+					</nav>
+					<nav class="d-flex flex-lg-row flex-column align-items-center justify-content-center">
+						<p style="margin: 0">Copyright © 2021 Freeducation</p>
+					</nav>
+				</div>
+			</div>
+		</div>
+	</section> 
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>

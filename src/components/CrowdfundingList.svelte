@@ -75,9 +75,9 @@
                   <div class="modal-dialog" role="document">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">
-                          {crowdfunding.title}
-                        </h5>
+                        <h6 class="modal-title" id="exampleModalLabel">
+                        Berdonasi Untuk Pendidikan Yang Lebih Maju
+                        </h6>
                         <button
                           type="button"
                           class="close"

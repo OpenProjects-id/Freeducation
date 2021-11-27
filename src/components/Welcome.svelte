@@ -14,7 +14,7 @@
               around the world head to class.
             </p>
             <a href="#popularcause" class="btn btn-outline-primary">
-              Lihat Proyek Urun Dana Yang Sedang Berjalan
+              Lihat Proyek Yang Sedang Berjalan
             </a>
           </div>
           <!-- .xs-welcome-wraper END -->

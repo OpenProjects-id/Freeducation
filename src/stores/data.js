@@ -3,6 +3,10 @@ import { writable } from 'svelte/store';
 export const crowdfundings = writable([]);
 export const crowdfunding = writable({});
 
+let headers = new Headers();
+
+headers.append("Access-Control-Allow-Origin", "https://freeducation-api.herokuapp.com");
+
 export async function getCrowdfundings() {
     const res = await fetch("https://freeducation-api.herokuapp.com/crowdfundings");
     const data = await res.json();

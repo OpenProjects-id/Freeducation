@@ -1,6 +1,8 @@
 <script>
     import { fade, slide, fly } from "svelte/transition";
     import { crowdfundings, crowdfunding } from "../stores/data.js";
+    import Modal from "./Modal.svelte";
+    import Loader from "./Loader.svelte";
   
     let isModalOpen = false;
   
@@ -63,9 +65,7 @@
             in:slide={{ delay: 1000 }}
             out:fade={{ delay: 1000 }}>
             {#if isModalOpen === true}
-              <!-- <Modal> -->
-                <!-- modal goes here -->
-                <!-- Modal -->
+              <Modal>
                 <div
                   class="modal fade show"
                   id="exampleModal"
@@ -91,7 +91,7 @@
                         <form>
                           <div class="form-group">
                             <label for="exampleInputAmount">
-                              Amount donation
+                              Jumlah Donasi
                             </label>
                             <input
                               required
@@ -99,27 +99,27 @@
                               class="form-control"
                               id="exampleInputAmount"
                               aria-describedby="amountHelp"
-                              placeholder="Enter amount" />
+                              placeholder="Masukkan jumlah donasi" />
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputName">Your name</label>
+                            <label for="exampleInputName">Nama Donatur</label>
                             <input
                               required
                               type="text"
                               class="form-control"
                               id="exampleInputName"
                               aria-describedby="nameHelp"
-                              placeholder="Enter full name" />
+                              placeholder="Masukkan nama anda" />
                           </div>
                           <div class="form-group">
-                            <label for="exampleInputEmail1">Email address</label>
+                            <label for="exampleInputEmail1">Alamat Email</label>
                             <input
                               required
                               type="email"
                               class="form-control"
                               id="exampleInputEmail1"
                               aria-describedby="emailHelp"
-                              placeholder="Enter email" />
+                              placeholder="Masukkan email anda" />
                           </div>
                           <div class="form-check">
                             <input
@@ -127,20 +127,20 @@
                               class="form-check-input"
                               id="exampleCheck1" />
                             <label class="form-check-label" for="exampleCheck1">
-                              I Agree
+                              Saya setuju dengan segala syarat dan ketentuan dari Freeducation
                             </label>
                           </div>
                         </form>
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-primary">
-                          Continue
+                          Lanjut ke pembayaran
                         </button>
                       </div>
                     </div>
                   </div>
                 </div>
-              <!-- </Modal> -->
+              </Modal>
             {/if}
             <div class="xs-popular-item xs-box-shadow">
               <div class="xs-item-header">
@@ -175,7 +175,7 @@
   
                 <ul class="xs-list-with-content">
                   <li class="pledged">
-                    {formatCurrency(crowdfunding.pledged)}
+                    {formatCurrency(crowdfunding.target)}
                     <span>Dibutuhkan</span>
                   </li>
                   <li>
@@ -212,23 +212,20 @@
   
                 <a
                   href="/donation/{crowdfunding.id}"
+                  on:click={handleButton}
                   data-toggle="modal"
                   data-target="#exampleModal"
                   class="btn btn-primary btn-block">
                   Bantu Urun Dana
                 </a>
               </div>
-              <!-- .xs-item-content END -->
             </div>
-            <!-- .xs-popular-item END -->
           </div>
         {:else}
-          <!-- <Loader /> -->
+          <Loader />
         {/each}
       </div>
-      <!-- .row end -->
     </div>
-    <!-- .container end -->
   </section>
   <!-- End popularCauses section -->
   

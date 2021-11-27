@@ -3,7 +3,7 @@
     <div>
       <div
         class="xs-welcome-content"
-        style="background-image: url(assets/images/slide1.jpg);">
+        style="background-image: url(assets/images/sekolah.jpg);">
         <div class="container">
           <div class="xs-welcome-wraper color-white">
             <h2>Every child has the right to learn.

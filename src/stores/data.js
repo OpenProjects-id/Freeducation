@@ -1,12 +1,12 @@
 import { writable } from 'svelte/store';
 
-export const charities = writable([]);
-export const charity = writable({});
+export const crowdfundings = writable([]);
+export const crowdfunding = writable({});
 
-export async function getCharities() {
-    const res = await fetch("https://charity-api-bwa.herokuapp.com/charities");
+export async function getCrowdfundings() {
+    const res = await fetch("https://freeducation-api.herokuapp.com/crowdfundings");
     const data = await res.json();
-    charities.set(data);
+    crowdfundings.set(data);
 
     if (res.ok) {
         return data;
@@ -15,12 +15,12 @@ export async function getCharities() {
     }
 }
 
-export async function getCharity(id) {
+export async function getCrowdfunding(id) {
     const res = await fetch(
-        `https://charity-api-bwa.herokuapp.com/charities/${id}`
+        `https://freeducation-api.herokuapp.com/crowdfundings/${id}`
     );
     const data = await res.json();
-    charity.set(data);
+    crowdfunding.set(data);
 
     if (res.ok) {
         return data;
@@ -29,4 +29,4 @@ export async function getCharity(id) {
     }
 }
 
-getCharities();
+getCrowdfundings();

@@ -11,10 +11,10 @@ Menambahkan remote upstream maksudnya menambahkan remote repo utama ke repo loca
 Jalankan perintah ini di local komputer.
 ```
 # jika menggunakan https
-git remote add upstream https://github.com/bellshade/Javascript.git
+git remote add upstream https://github.com/OpenProjects-id/Freeducation.git
 
 # jika menggunakan ssh
-git remote add upstream git@github.com:bellshade/Javascript.git
+git remote add upstream git@github.com:OpenProjects-id/Freeducation.git
 ```
 4. Melakukan fetch dan pull ketika ada pembaruan
 Jika sudah ditambahkan remote upstream, langkah ini bisa mengambil perubahan yang ada direpo utama. Biasakan mengambil pembaruan secara berkala.

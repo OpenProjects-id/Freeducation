@@ -35,6 +35,6 @@ Jika mempunyai saran atau ingin menambahkan sesuatu, disarankan membuat issue in
 6. Membuat perubahan yang etis dan masuk akal
 Tolong, jangan membuat pull request yang tidak pantas untuk di buka, misalnya membuat perubahan nama variabel atau menambah sebuah titik (.) untuk perubahannya. Hargai kami sebagai maintainer mereview setiap pull request, kita juga mengurusi pull request yang lain juga. Jika ditemukan PR seperti ini, PR TERSEBUT AKAN DICLOSE.
 
-Jika ada pertanyaan atau saran, bukalah issue atau tanyakan ke [Discord OpenProjects.id](https://discord.gg/jXzjHu9fJ7) di channel ^^#freeducation^^.
+Jika ada pertanyaan atau saran, bukalah issue atau tanyakan ke [Discord OpenProjects.id](https://discord.gg/jXzjHu9fJ7) di channel `#freeducation`.
 
 Terima Kasih.

@@ -1,4 +1,3 @@
-<!-- welcome section -->
 <section class="">
     <div>
       <div
@@ -17,12 +16,7 @@
               Lihat Proyek Yang Sedang Berjalan
             </a>
           </div>
-          <!-- .xs-welcome-wraper END -->
         </div>
-        <!-- .container end -->
-        <div class="xs-black-overlay" />
       </div>
-      <!-- .xs-welcome-content END -->
     </div>
   </section>
-  <!-- End welcome section -->

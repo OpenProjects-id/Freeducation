@@ -31,8 +31,8 @@
   </style>
   <nav class="navbar-1-1 navbar navbar-expand-lg navbar-light px-md-4 bg-body" style="font-family: Poppins, sans-serif">
     <div class="container">
-      <a class="navbar-brand" href="#">
-        <img src="assets/images/logo.svg" alt="" style="height: 50px;" />
+      <a class="navbar-brand" href="/">
+        <img src="assets/images/logo.svg" alt="Logo Freeducation" style="height: 50px;" />
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon" />
@@ -40,16 +40,22 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link px-md-4 active" aria-current="page" href="#">Home</a>
+            <a class="nav-link px-md-4 active" aria-current="page" href="/">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link px-md-4" href="#">Tentang</a>
+            <a class="nav-link px-md-4" href="/about">Tentang</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-md-4" href="/contact">Kontak</a>
           </li>
           <li class="nav-item">
             <a class="nav-link px-md-4" href="#">Tim Kami</a>
           </li>
           <li class="nav-item">
             <a class="nav-link px-md-4" href="#">Kerja Sama</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-md-4" href="#">Sponsor</a>
           </li>
         </ul>
         <div class="d-flex">

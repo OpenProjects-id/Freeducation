@@ -145,7 +145,7 @@
             <div class="xs-popular-item xs-box-shadow">
               <div class="xs-item-header">
   
-                <img src={crowdfunding.thumbnail} alt="" />
+                <img src={crowdfunding.thumbnail} alt="" style="height: 250px; width: 350px;"/>
   
                 <div class="xs-skill-bar">
                   <div

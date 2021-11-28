@@ -4,7 +4,7 @@
 			@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
             
             .footer-2-1 {
-                background-color: #1976D2;
+                background-color: #012C6D;
                 min-height: 100vh;
             }
 
@@ -102,7 +102,7 @@
 				<div class="row gap-md-0 gap-3">
 					<div class="col-lg-3 col-md-6 px-5">
 							<div>
-                                <a href="index.html" class="xs-footer-logo">
+                                <a href="/" class="xs-footer-logo">
                                     <img src="assets/images/Footer_Logo.png" alt="">
                                 </a>
                                 <p class="footer-caption">Freeducation adalah sebuah platform <i>open source</i> untuk membantu saudara-saudara kita yang ada di tanah air dari sisi finansial untuk mengenyam pendidikan.
@@ -110,53 +110,59 @@
                             </div>
 					</div>
                     <div class="col-lg-3 col-md-6 px-5">
-						<h2 class="footer-text-title">Product</h2>
+						<h2 class="footer-text-title">Fitur</h2>
 						<nav class="list-unstyled">
 							<li class="list-space">
-								<a href="" class="list-menu">Real Time Analytic</a>
+								<a href="https://api.whatsapp.com/send?phone=6282125609413&text=Halo%20Admin%20Freeducation%20ID,%20Saya%20mau%20berdonasi" class="list-menu">Berdonasi</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Easy to Operate</a>
+								<a href="https://api.whatsapp.com/send?phone=6282125609413&text=Halo%20Admin%20Freeducation%20ID,%20Saya%20mau%20menggalang%20dana%20untuk%20pendidikan" class="list-menu">Penggalangan Dana</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Full Secured</a>
+								<a href="https://api.whatsapp.com/send?phone=6282125609413&text=Halo%20Admin%20Freeducation%20ID,%20Saya%20mau%20mengajukan%beasiswa" class="list-menu">Mengajukan Beasiswa</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Analytic Tool</a>
-							</li>
-							<li class="list-space">
-								<a href="" class="list-menu">Story</a>
+								<a href="https://api.whatsapp.com/send?phone=6282125609413&text=Halo%20Admin%20Freeducation%20ID,%20Saya%20mau%20mengadakan%beasiswa" class="list-menu">Mengadakan Beasiswa</a>
 							</li>
 						</nav>
 					</div>
 					<div class="col-lg-3 col-md-6 px-5">
-						<h2 class="footer-text-title">Company</h2>
+						<h2 class="footer-text-title">Informasi</h2>
 						<nav class="list-unstyled">
 							<li class="list-space">
-								<a href="" class="list-menu">Contact Us</a>
+								<a href="/contact" class="list-menu">Kontak</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Blog</a>
+								<a href="/about" class="list-menu">Tentang</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Culture</a>
+								<a href="" class="list-menu">Tim</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Security</a>
+								<a href="" class="list-menu">Kerja sama</a>
+							</li>
+							<li class="list-space">
+								<a href="" class="list-menu">Sponsor</a>
 							</li>
 						</nav>
 					</div>
 					<div class="col-lg-3 col-md-6 px-5">
-						<h2 class="footer-text-title">Support</h2>
+						<h2 class="footer-text-title">Bantuan</h2>
 						<nav class="list-unstyled">
 							<li class="list-space">
-								<a href="" class="list-menu">Getting Started</a>
+								<a href="" class="list-menu">Pers</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Help Center</a>
+								<a href="" class="list-menu">Media</a>
 							</li>
 							<li class="list-space">
-								<a href="" class="list-menu">Server Status</a>
+								<a href="" class="list-menu">Pelatihan</a>
+							</li>
+							<li class="list-space">
+								<a href="" class="list-menu">Kampanye</a>
+							</li>
+							<li class="list-space">
+								<a href="https://github.com/OpenProjects-id" class="list-menu">Open Projects ID</a>
 							</li>
 						</nav>
 					</div>
@@ -176,14 +182,14 @@
                         </ul>
 					</div>
 					<nav class="mx-auto d-flex flex-wrap align-items-center justify-content-center gap-4">
-						<a href="" class="footer-link" style="text-decoration: none">Terms of Service</a>
+						<a href="" class="footer-link" style="text-decoration: none">Syarat & Ketentuan</a>
 						<span>|</span>
-						<a href="" class="footer-link" style="text-decoration: none">Privacy Policy</a>
+						<a href="" class="footer-link" style="text-decoration: none">Kebijakan Privasi</a>
 						<span>|</span>
-						<a href="" class="footer-link" style="text-decoration: none">Licenses</a>
+						<a href="https://github.com/OpenProjects-id/Freeducation/blob/main/LICENSE" class="footer-link" style="text-decoration: none">Lisensi</a>
 					</nav>
 					<nav class="d-flex flex-lg-row flex-column align-items-center justify-content-center">
-						<p style="margin: 0">Copyright © 2021 Freeducation</p>
+						<p style="margin: 0">Hak Cipta © 2021 Freeducation</p>
 					</nav>
 				</div>
 			</div>

@@ -2112,7 +2112,8 @@ svg {
   height: 460px; }
 
 .xs-contact-form .input-group-append {
-  margin-left: 0px; }
+  margin-left: 0px; 
+}
 
 /* Contact verison 2 */
 .xs-contact-section-v2 {
@@ -2147,19 +2148,19 @@ svg {
 
 .xs-contact-form.contact-form-v2 ::-webkit-input-placeholder {
   /* Chrome/Opera/Safari */
-  color: #586ea2; }
+  color: white; }
 
 .xs-contact-form.contact-form-v2 ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #586ea2; }
+  color: white; }
 
 .xs-contact-form.contact-form-v2 :-ms-input-placeholder {
   /* IE 10+ */
-  color: #586ea2; }
+  color: white; }
 
 .xs-contact-form.contact-form-v2 :-moz-placeholder {
   /* Firefox 18- */
-  color: #586ea2; }
+  color: white; }
 
 /* map wraper version 2 */
 .xs-maps-wraper.map-wraper-v2 {
@@ -3616,7 +3617,7 @@ svg {
   left: 0;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: #1976D2;
   z-index: 0; }
   .xs-black-overlay.bg-aqua {
     background-color: rgba(24, 191, 195, 0.8); }

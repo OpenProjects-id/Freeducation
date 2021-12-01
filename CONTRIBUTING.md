@@ -13,6 +13,21 @@ Setelah itu anda dapat mengikuti beberapa tahap berikut ini:
 5. Jalankan `git pull upstream halaman-donasi` pada repo fork anda untuk menerapkan perubahan di repo upstream ke repo anda
 6. Anda dapat mulai mengerjakan issue / fitur
 
+## Panduan Git Flow yang dipakai
+
+Untuk memudahkan proses kolaborasi antar kontributor pada repo ini, kita perlu menerapkan aturan git yang perlu dijadikan pedoman.
+
+pada repo ini kita akan menggunakan beberapa tipe `branch`. diantaranya yaitu:
+
+| Tipe       | Deskripsi                                                                                                                                |
+| ---------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| `main`     | Branch utama, branch ini perlu dilindungi dan dipastikan tidak ada error                                                 |
+| `develop`      | Branch pengembangan, fitur-fitur yang sudah selesai dikembangkan akan di merge ke branch ini                                                                      |
+| `release`     | Branch ini digunakan untuk penandaan versi aplikasi yang siap rilis  (cth: `freeducation-v1`)  |
+| `feature` | Branch yang dibuat setiap ingin mengerjakan fitur baru (cth: `halaman-donasi`)       |
+| `hotfix`     | Branch yang digunakan untuk memperbaiki bug/error/issue yang ada pada kode. Nama branch dapat menggunakan id dari issue yang ingin diselesaikan (cth: `hotfix-83` / `hotfix-cart-kosong`)   |
+
+
 ## Ketentuan Commit
 
 Pesan commit harus memiliki format sebagai berikut:

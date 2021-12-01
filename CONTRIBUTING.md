@@ -17,7 +17,9 @@ Setelah itu anda dapat mengikuti beberapa tahap berikut ini:
 
 Untuk memudahkan proses kolaborasi antar kontributor pada repo ini, kita perlu menerapkan aturan git yang perlu dijadikan pedoman.
 
-pada repo ini kita akan menggunakan beberapa tipe `branch`. diantaranya yaitu:
+### Tipe-tipe Branch
+
+Pada repo ini kita akan menggunakan beberapa tipe `branch`. diantaranya yaitu:
 
 | Tipe       | Deskripsi                                                                                                                                |
 | ---------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
@@ -27,6 +29,43 @@ pada repo ini kita akan menggunakan beberapa tipe `branch`. diantaranya yaitu:
 | `feature` | Branch yang dibuat setiap ingin mengerjakan fitur baru (cth: `halaman-donasi`)       |
 | `hotfix`     | Branch yang digunakan untuk memperbaiki bug/error/issue yang ada pada kode. Nama branch dapat menggunakan id dari issue yang ingin diselesaikan (cth: `hotfix-83` / `hotfix-cart-kosong`)   |
 
+### Git Flow
+
+> Sebelum baca ini sebaiknya baca terlebih dahulu bagian persiapan
+
+Berikut ini panduan yang dapat digunakan ketika ingin mengerjakan fitur / sub-fitur.
+
+1. Checkout ke branch develop dan sinkronkan local branch dengan update dari upstream
+```
+git checkout develop
+git pull upstream develop
+```
+2. Buat branch fitur baru dari branch develop di repo upstream jika belum ada. contoh : `halaman-donasi`
+3. Checkout ke branch fitur di local, jadikan branch fitur di upstream sebagai upstream di branch fitur lokal
+```
+// jika branch sudah ada
+git checkout halaman-donasi 
+
+// jika branch belum ada
+git checkout -b halaman donasi
+
+// konfigurasi upstream untuk branch
+git branch --set-upstream-to upstream/halaman-donasi
+```
+4. Buat branch fitur / task dari branch fitur utama. Contoh: `halaman-donasi/progress-donasi`
+```
+git checkout -b halaman-donasi/progress-donasi
+```
+5. Jika sudah selesai mengerjakan, push branch lokal ke repo github (hasil fork) anda
+```
+git push origin halaman-donasi/progress-donasi
+```
+6. Buat PR dari branch yang tadi sudah di push di repo github anda ke branch fitur di repo upstream. Jangan lupa tambahkan reviewer. Contoh : `base: Freeducation:halaman-donasi <- <repo-fork>:halaman-donasi/progress-donasi`
+7. Menunggu hasil review
+8. Jika PR di setujui bisa merge ke branch fitur, gunakan opsi `squash & merge` jika commit anda lebih dari 2.
+9.  Jika PR tidak disetujui, perbaiki kode sesuai hasil review di branch lokal anda.
+10. Jika sudah selesai, push perubahan ke branch di github
+11. Ulangi hingga PR disetujui
 
 ## Ketentuan Commit
 

@@ -5,9 +5,9 @@
 	import About from "./pages/About.svelte";
 	import Contact from "./pages/Contact.svelte";
 	import Donation from "./pages/Donation.svelte";
-	// import NotFound from "./pages/NotFound.svelte";
-	// import Success from "./pages/Success.svelte";
-	// import Failure from "./pages/Failure.svelte";
+	import NotFound from "./pages/NotFound.svelte";
+	import Success from "./pages/Success.svelte";
+	import Failure from "./pages/Failure.svelte";
   
 	export let ready;
   
@@ -15,17 +15,17 @@
 	router("/about", () => ($page = About));
 	router("/contact", () => ($page = Contact));
 	router("/donation", () => ($page = Donation));
-// 	router("/success", () => ($page = Success));
-// 	router("/error", () => ($page = Failure));
-// 	router(
-// 	  "/donation/:id",
-// 	  (ctx, next) => {
-// 		$params = ctx.params;
-// 		next();
-// 	  },
-// 	  () => ($page = Donation)
-// 	);
-// 	router("/*", () => ($page = NotFound));
+	router("/success", () => ($page = Success));
+	router("/error", () => ($page = Failure));
+	router(
+	  "/donation/:id",
+	  (ctx, next) => {
+		$params = ctx.params;
+		next();
+	  },
+	  () => ($page = Donation)
+	);
+	router("/*", () => ($page = NotFound));
   
 	router.start();
   </script>

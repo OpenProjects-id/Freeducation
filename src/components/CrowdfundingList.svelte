@@ -1,4 +1,5 @@
 <script>
+    import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
     import { fade, slide, fly } from "svelte/transition";
     import { crowdfundings, crowdfunding } from "../stores/data.js";
     import Modal from "./Modal.svelte";
@@ -64,84 +65,6 @@
             class="col-lg-4 col-md-6"
             in:slide={{ delay: 1000 }}
             out:fade={{ delay: 1000 }}>
-            {#if isModalOpen === true}
-              <Modal>
-                <div
-                  class="modal fade show"
-                  id="exampleModal"
-                  tabindex="-1"
-                  role="dialog"
-                  aria-labelledby="exampleModalLabel">
-                  <div class="modal-dialog" role="document">
-                    <div class="modal-content">
-                      <div class="modal-header">
-                        <h6 class="modal-title" id="exampleModalLabel">
-                        Berdonasi Untuk Pendidikan Yang Lebih Maju
-                        </h6>
-                        <button
-                          type="button"
-                          class="close"
-                          data-dismiss="modal"
-                          aria-label="Close"
-                          on:click={handleCloseModal}>
-                          <span aria-hidden="true">&times;</span>
-                        </button>
-                      </div>
-                      <div class="modal-body">
-                        <form>
-                          <div class="form-group">
-                            <label for="exampleInputAmount">
-                              Jumlah Donasi
-                            </label>
-                            <input
-                              required
-                              type="number"
-                              class="form-control"
-                              id="exampleInputAmount"
-                              aria-describedby="amountHelp"
-                              placeholder="Masukkan jumlah donasi" />
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputName">Nama Donatur</label>
-                            <input
-                              required
-                              type="text"
-                              class="form-control"
-                              id="exampleInputName"
-                              aria-describedby="nameHelp"
-                              placeholder="Masukkan nama anda" />
-                          </div>
-                          <div class="form-group">
-                            <label for="exampleInputEmail1">Alamat Email</label>
-                            <input
-                              required
-                              type="email"
-                              class="form-control"
-                              id="exampleInputEmail1"
-                              aria-describedby="emailHelp"
-                              placeholder="Masukkan email anda" />
-                          </div>
-                          <div class="form-check">
-                            <input
-                              type="checkbox"
-                              class="form-check-input"
-                              id="exampleCheck1" />
-                            <label class="form-check-label" for="exampleCheck1">
-                              Saya setuju dengan segala syarat dan ketentuan dari Freeducation
-                            </label>
-                          </div>
-                        </form>
-                      </div>
-                      <div class="modal-footer">
-                        <button type="button" class="btn btn-primary">
-                          Lanjut ke pembayaran
-                        </button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </Modal>
-            {/if}
             <div class="xs-popular-item xs-box-shadow">
               <div class="xs-item-header">
   
@@ -167,11 +90,11 @@
               <div class="xs-item-content">
                 <ul class="xs-simple-tag xs-mb-20">
                   <li>
-                    <a href="#">{crowdfunding.category}</a>
+                    <a href="/donation/{crowdfunding.id}">{crowdfunding.category}</a>
                   </li>
                 </ul>
   
-                <a href="#" class="xs-post-title xs-mb-30">{crowdfunding.title}</a>
+                <a href="/donation/{crowdfunding.id}" class="xs-post-title xs-mb-30">{crowdfunding.title}</a>
   
                 <ul class="xs-list-with-content">
                   <li class="pledged">
@@ -201,7 +124,7 @@
                     <img src={crowdfunding.profile_photo} alt="" />
                   </div>
                   <div class="xs-avatar-title">
-                    <a href="#">
+                    <a href="/donation/{crowdfunding.id}">
                       <span>By</span>
                       {crowdfunding.profile_name}
                     </a>

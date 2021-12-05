@@ -1,63 +1,66 @@
 <script>
   import { crowdfunding, getCrowdfunding } from "../stores/data.js";
   import { params } from "../stores/pages.js";
-  // import router from "page";
+  import router from "page";
   import Header from "../components/Header.svelte";
   import Footer from "../components/Footer.svelte";
   import Loader from "../components/Loader.svelte";
 
-  //   let amount = 0,
-  //     name,
-  //     email,
-  //     agree = false,
-  //     contribute = 0;
+  let amount,
+    name,
+    email,
+    agree = false,
+    contribute = 0;
 
-  //   $: if ($crowdfunding) {
-  //     contribute = Math.floor((parseInt(amount) / $crowdfunding.target) * 100);
-  //   }
+  $: if ($crowdfunding) {
+    contribute = Math.floor((parseInt(amount) / $crowdfunding.target) * 100);
+  }
 
-  //   getCrowdfunding($params.id);
+  getCrowdfunding($params.id);
 
-  //   function handleButtonClick() {
-  //     console.log("Button click");
-  //   }
+  function handleButtonClick() {
+    console.log("Button click");
+  }
 
-  //   async function handleForm(event) {
-  //     agree = false;
-  //     const newData = await getCrowdfunding($params.id);
-  //     newData.pledged = newData.pledged + parseInt(amount);
-  //     try {
-  //       const res = await fetch(`https://freeducation-api.herokuapp.com/crowdfundings/${$params.id}`, {
-  //         method: "PUT",
-  //         headers: {
-  //           "content-type": "application/json",
-  //         },
-  //         body: JSON.stringify(newData),
-  //       });
-  //       const resMid = await fetch(`/.netlify/functions/payment`, {
-  //         method: "POST",
-  //         headers: {
-  //           "content-type": "application/json",
-  //         },
-  //         body: JSON.stringify({
-  //           id: $params.id,
-  //           amount: parseInt(amount),
-  //           name,
-  //           email,
-  //         }),
-  //       });
-  //       const midtransData = await resMid.json();
-  //       console.log(midtransData);
-  //       window.location.href = midtransData.url;
-  //     } catch (err) {
-  //       console.log(err);
-  //     }
-  //   }
+  async function handleForm(event) {
+    agree = false;
+    const newData = await getCrowdfunding($params.id);
+    newData.pledged = newData.pledged + parseInt(amount);
+    try {
+      const res = await fetch(
+        `https://freeducation-api.herokuapp.com/crowdfundings/${$params.id}`,
+        {
+          method: "PUT",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(newData),
+        }
+      );
+      console.log(res);
+      router.redirect('/success');
+      // const resMid = await fetch(`/.netlify/functions/payment`, {
+      //   method: "POST",
+      //   headers: {
+      //     "content-type": "application/json",
+      //   },
+      //   body: JSON.stringify({
+      //     id: $params.id,
+      //     amount: parseInt(amount),
+      //     name,
+      //     email,
+      //   }),
+      // });
+      // const midtransData = await resMid.json();
+      // console.log(midtransData);
+      // window.location.href = midtransData.url;
+    } catch (err) {
+      console.log(err);
+    }
+  }
 </script>
 
 <Header />
-<!-- welcome section -->
-<!--breadcumb start here-->
 {#if !$crowdfunding}
   <Loader />
 {:else}
@@ -67,7 +70,8 @@
   >
     <div class="container">
       <div class="color-white xs-inner-banner-content">
-        <h2>Berdonasi Untuk Freeducation</h2>
+        <h2>Berdonasi</h2>
+        <p>{$crowdfunding.title}</p>
       </div>
     </div>
   </section>
@@ -80,20 +84,20 @@
         <div class="row">
           <div class="col-lg-6">
             <div class="xs-donation-form-images">
-                <img src="assets/images/donation.jpg" class="img-responsive" alt="Family Images" style="border-radius: 25px;" />
+              <img src={$crowdfunding.thumbnail} class="img-responsive" alt="Family Images" style="border-radius: 25px;" />
             </div>
           </div>
           <div class="col-lg-6">
             <div class="xs-donation-form-wraper">
               <div class="xs-heading xs-mb-30">
-                <h2 class="xs-title">Berdonasi Untuk Freeducation</h2>
+                <h2 class="xs-title">{$crowdfunding.title}</h2>
                 <p class="small">
                   Meskipun kami hadir sebagai organisasi non-profit, namun tidak bisa dipungkiri bahwa biaya server, domain, pemeliharaan, dll harus tetap jalan. Kamu bisa berdonasi buat kami agar tetap bisa menyalakan layanan platform
                   Freeducation ini untuk menolong saudara-saudara kita.
                 </p>
                 <h5>
                   Donasi kami akan berkontribusi sebesar
-                  <strong>5%</strong>
+                  <strong>{contribute}%</strong>
                   dari total donasi yang ada.
                 </h5>
                 <span class="xs-separetor v2" />
@@ -105,7 +109,7 @@
                     Jumlah Donasi
                     <span class="color-light-red">**</span>
                   </label>
-                  <input type="text" name="amount" id="xs-donate-amount" class="form-control" required="true" placeholder="Rp. " />
+                  <input type="text" name="amount" id="xs-donate-amount" class="form-control" bind:value={amount} required="true" placeholder="Rp. " />
                 </div>
                 <!-- .xs-input-group END -->
                 <div class="xs-input-group">
@@ -113,24 +117,24 @@
                     Nama Anda
                     <span class="color-light-red">**</span>
                   </label>
-                  <input type="text" name="name" id="xs-donate-name" class="form-control" required="true" placeholder="Masukkan Nama Anda" />
+                  <input type="text" name="name" id="xs-donate-name" class="form-control" bind:value={name} required="true" placeholder="Masukkan Nama Anda" />
                 </div>
                 <div class="xs-input-group">
                   <label for="xs-donate-email">
                     Email Anda
                     <span class="color-light-red">**</span>
                   </label>
-                  <input type="email" name="email" required="true" id="xs-donate-email" class="form-control" placeholder="Masukkan Email Anda" />
+                  <input type="email" name="email" required="true" id="xs-donate-email" class="form-control" bind:value={email} placeholder="Masukkan Email Anda" />
                 </div>
                 <div class="xs-input-group" id="xs-input-checkbox">
-                  <input type="checkbox" name="agree" id="xs-donate-agree" />
+                  <input type="checkbox" name="agree" id="xs-donate-agree" bind:checked={agree}/>
                   <label for="xs-donate-agree">
                     Saya setuju dengan Syarat dan Ketentuan dari Freeducation
                     <span class="color-light-red">**</span>
                   </label>
                 </div>
                 <!-- .xs-input-group END -->
-                <button type="submit" class="btn btn-primary text-white" style="background-color: #012C6D;">
+                <button type="submit" disabled={!agree} class="btn btn-primary text-white" style="background-color: #012C6D;">
                   <span class="badge">
                     <i class="fa fa-heart" />
                   </span>

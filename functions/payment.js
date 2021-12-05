@@ -9,8 +9,8 @@ exports.handler = function (event, context, callback) {
 
     const snap = new Midtrans.Snap({
         isProduction: true,
-        serverKey: process.env.MIDTRANS_SERVER_KEY,
-        clientKey: process.env.MIDTRANS_CLIENT_KEY
+        clientKey: process.env.MIDTRANS_CLIENT_KEY,
+        serverKey: process.env.MIDTRANS_SERVER_KEY
     });
 
     const { id, name, email, amount, donation } = JSON.parse(event.body);

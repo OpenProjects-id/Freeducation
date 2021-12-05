@@ -5662,7 +5662,7 @@ var app = (function () {
     	let h20;
     	let t1;
     	let p0;
-    	let t2_value = /*$crowdfunding*/ ctx[0].title + "";
+    	let t2_value = /*$crowdfunding*/ ctx[1].title + "";
     	let t2;
     	let t3;
     	let main;
@@ -5678,7 +5678,7 @@ var app = (function () {
     	let div9;
     	let div4;
     	let h21;
-    	let t5_value = /*$crowdfunding*/ ctx[0].title + "";
+    	let t5_value = /*$crowdfunding*/ ctx[1].title + "";
     	let t5;
     	let t6;
     	let p1;
@@ -5760,7 +5760,7 @@ var app = (function () {
     			h5 = element("h5");
     			t9 = text("Donasi kami akan berkontribusi sebesar\r\n                  ");
     			strong = element("strong");
-    			t10 = text(/*contribute*/ ctx[4]);
+    			t10 = text(/*contribute*/ ctx[5]);
     			t11 = text("%");
     			t12 = text("\r\n                  dari total donasi yang ada.");
     			t13 = space();
@@ -5812,7 +5812,7 @@ var app = (function () {
     			attr_dev(section0, "class", "xs-banner-inner-section parallax-window");
     			set_style(section0, "background-image", "url('https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80')");
     			add_location(section0, file$2, 66, 2, 1795);
-    			if (!src_url_equal(img.src, img_src_value = /*$crowdfunding*/ ctx[0].thumbnail)) attr_dev(img, "src", img_src_value);
+    			if (!src_url_equal(img.src, img_src_value = /*$crowdfunding*/ ctx[1].thumbnail)) attr_dev(img, "src", img_src_value);
     			attr_dev(img, "class", "img-responsive");
     			attr_dev(img, "alt", "Family Images");
     			set_style(img, "border-radius", "25px");
@@ -5845,53 +5845,53 @@ var app = (function () {
     			attr_dev(div5, "class", "xs-input-group");
     			add_location(div5, file$2, 106, 16, 3779);
     			attr_dev(span2, "class", "color-light-red");
-    			add_location(span2, file$2, 117, 20, 4329);
+    			add_location(span2, file$2, 117, 20, 4349);
     			attr_dev(label1, "for", "xs-donate-name");
-    			add_location(label1, file$2, 115, 18, 4248);
+    			add_location(label1, file$2, 115, 18, 4268);
     			attr_dev(input1, "type", "text");
     			attr_dev(input1, "name", "name");
     			attr_dev(input1, "id", "xs-donate-name");
     			attr_dev(input1, "class", "form-control");
     			input1.required = "true";
     			attr_dev(input1, "placeholder", "Masukkan Nama Anda");
-    			add_location(input1, file$2, 119, 18, 4416);
+    			add_location(input1, file$2, 119, 18, 4436);
     			attr_dev(div6, "class", "xs-input-group");
-    			add_location(div6, file$2, 114, 16, 4200);
+    			add_location(div6, file$2, 114, 16, 4220);
     			attr_dev(span3, "class", "color-light-red");
-    			add_location(span3, file$2, 124, 20, 4730);
+    			add_location(span3, file$2, 124, 20, 4750);
     			attr_dev(label2, "for", "xs-donate-email");
-    			add_location(label2, file$2, 122, 18, 4647);
+    			add_location(label2, file$2, 122, 18, 4667);
     			attr_dev(input2, "type", "email");
     			attr_dev(input2, "name", "email");
     			input2.required = "true";
     			attr_dev(input2, "id", "xs-donate-email");
     			attr_dev(input2, "class", "form-control");
     			attr_dev(input2, "placeholder", "Masukkan Email Anda");
-    			add_location(input2, file$2, 126, 18, 4817);
+    			add_location(input2, file$2, 126, 18, 4837);
     			attr_dev(div7, "class", "xs-input-group");
-    			add_location(div7, file$2, 121, 16, 4599);
+    			add_location(div7, file$2, 121, 16, 4619);
     			attr_dev(input3, "type", "checkbox");
     			attr_dev(input3, "name", "agree");
     			attr_dev(input3, "id", "xs-donate-agree");
     			attr_dev(input3, "class", "svelte-zm84ao");
-    			add_location(input3, file$2, 129, 18, 5076);
+    			add_location(input3, file$2, 129, 18, 5096);
     			attr_dev(span4, "class", "color-light-red");
-    			add_location(span4, file$2, 132, 20, 5305);
+    			add_location(span4, file$2, 132, 20, 5325);
     			attr_dev(label3, "for", "xs-donate-agree");
     			attr_dev(label3, "class", "svelte-zm84ao");
-    			add_location(label3, file$2, 130, 18, 5175);
+    			add_location(label3, file$2, 130, 18, 5195);
     			attr_dev(div8, "class", "xs-input-group svelte-zm84ao");
     			attr_dev(div8, "id", "xs-input-checkbox");
-    			add_location(div8, file$2, 128, 16, 5005);
+    			add_location(div8, file$2, 128, 16, 5025);
     			attr_dev(i, "class", "fa fa-heart");
-    			add_location(i, file$2, 138, 20, 5632);
+    			add_location(i, file$2, 138, 20, 5652);
     			attr_dev(span5, "class", "badge");
-    			add_location(span5, file$2, 137, 18, 5590);
+    			add_location(span5, file$2, 137, 18, 5610);
     			attr_dev(button, "type", "submit");
-    			button.disabled = button_disabled_value = !/*agree*/ ctx[3];
+    			button.disabled = button_disabled_value = !/*agree*/ ctx[4];
     			attr_dev(button, "class", "btn btn-primary text-white");
     			set_style(button, "background-color", "#012C6D");
-    			add_location(button, file$2, 136, 16, 5460);
+    			add_location(button, file$2, 136, 16, 5480);
     			attr_dev(form, "action", "#");
     			attr_dev(form, "method", "post");
     			attr_dev(form, "id", "xs-donation-form");
@@ -5952,6 +5952,7 @@ var app = (function () {
     			append_dev(label0, span1);
     			append_dev(div5, t17);
     			append_dev(div5, input0);
+    			set_input_value(input0, /*amount*/ ctx[0]);
     			append_dev(form, t18);
     			append_dev(form, div6);
     			append_dev(div6, label1);
@@ -5959,7 +5960,7 @@ var app = (function () {
     			append_dev(label1, span2);
     			append_dev(div6, t21);
     			append_dev(div6, input1);
-    			set_input_value(input1, /*name*/ ctx[1]);
+    			set_input_value(input1, /*name*/ ctx[2]);
     			append_dev(form, t22);
     			append_dev(form, div7);
     			append_dev(div7, label2);
@@ -5967,11 +5968,11 @@ var app = (function () {
     			append_dev(label2, span3);
     			append_dev(div7, t25);
     			append_dev(div7, input2);
-    			set_input_value(input2, /*email*/ ctx[2]);
+    			set_input_value(input2, /*email*/ ctx[3]);
     			append_dev(form, t26);
     			append_dev(form, div8);
     			append_dev(div8, input3);
-    			input3.checked = /*agree*/ ctx[3];
+    			input3.checked = /*agree*/ ctx[4];
     			append_dev(div8, t27);
     			append_dev(div8, label3);
     			append_dev(label3, t28);
@@ -5984,38 +5985,43 @@ var app = (function () {
 
     			if (!mounted) {
     				dispose = [
-    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[6]),
-    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[7]),
-    					listen_dev(input3, "change", /*input3_change_handler*/ ctx[8]),
-    					listen_dev(form, "submit", prevent_default(/*handleForm*/ ctx[5]), false, true, false)
+    					listen_dev(input0, "input", /*input0_input_handler*/ ctx[7]),
+    					listen_dev(input1, "input", /*input1_input_handler*/ ctx[8]),
+    					listen_dev(input2, "input", /*input2_input_handler*/ ctx[9]),
+    					listen_dev(input3, "change", /*input3_change_handler*/ ctx[10]),
+    					listen_dev(form, "submit", prevent_default(/*handleForm*/ ctx[6]), false, true, false)
     				];
 
     				mounted = true;
     			}
     		},
     		p: function update(ctx, dirty) {
-    			if (dirty & /*$crowdfunding*/ 1 && t2_value !== (t2_value = /*$crowdfunding*/ ctx[0].title + "")) set_data_dev(t2, t2_value);
+    			if (dirty & /*$crowdfunding*/ 2 && t2_value !== (t2_value = /*$crowdfunding*/ ctx[1].title + "")) set_data_dev(t2, t2_value);
 
-    			if (dirty & /*$crowdfunding*/ 1 && !src_url_equal(img.src, img_src_value = /*$crowdfunding*/ ctx[0].thumbnail)) {
+    			if (dirty & /*$crowdfunding*/ 2 && !src_url_equal(img.src, img_src_value = /*$crowdfunding*/ ctx[1].thumbnail)) {
     				attr_dev(img, "src", img_src_value);
     			}
 
-    			if (dirty & /*$crowdfunding*/ 1 && t5_value !== (t5_value = /*$crowdfunding*/ ctx[0].title + "")) set_data_dev(t5, t5_value);
-    			if (dirty & /*contribute*/ 16) set_data_dev(t10, /*contribute*/ ctx[4]);
+    			if (dirty & /*$crowdfunding*/ 2 && t5_value !== (t5_value = /*$crowdfunding*/ ctx[1].title + "")) set_data_dev(t5, t5_value);
+    			if (dirty & /*contribute*/ 32) set_data_dev(t10, /*contribute*/ ctx[5]);
 
-    			if (dirty & /*name*/ 2 && input1.value !== /*name*/ ctx[1]) {
-    				set_input_value(input1, /*name*/ ctx[1]);
+    			if (dirty & /*amount*/ 1 && input0.value !== /*amount*/ ctx[0]) {
+    				set_input_value(input0, /*amount*/ ctx[0]);
     			}
 
-    			if (dirty & /*email*/ 4 && input2.value !== /*email*/ ctx[2]) {
-    				set_input_value(input2, /*email*/ ctx[2]);
+    			if (dirty & /*name*/ 4 && input1.value !== /*name*/ ctx[2]) {
+    				set_input_value(input1, /*name*/ ctx[2]);
     			}
 
-    			if (dirty & /*agree*/ 8) {
-    				input3.checked = /*agree*/ ctx[3];
+    			if (dirty & /*email*/ 8 && input2.value !== /*email*/ ctx[3]) {
+    				set_input_value(input2, /*email*/ ctx[3]);
     			}
 
-    			if (dirty & /*agree*/ 8 && button_disabled_value !== (button_disabled_value = !/*agree*/ ctx[3])) {
+    			if (dirty & /*agree*/ 16) {
+    				input3.checked = /*agree*/ ctx[4];
+    			}
+
+    			if (dirty & /*agree*/ 16 && button_disabled_value !== (button_disabled_value = !/*agree*/ ctx[4])) {
     				prop_dev(button, "disabled", button_disabled_value);
     			}
     		},
@@ -6094,7 +6100,7 @@ var app = (function () {
     	const if_blocks = [];
 
     	function select_block_type(ctx, dirty) {
-    		if (!/*$crowdfunding*/ ctx[0]) return 0;
+    		if (!/*$crowdfunding*/ ctx[1]) return 0;
     		return 1;
     	}
 
@@ -6189,16 +6195,16 @@ var app = (function () {
     	let $params;
     	let $crowdfunding;
     	validate_store(params, 'params');
-    	component_subscribe($$self, params, $$value => $$invalidate(9, $params = $$value));
+    	component_subscribe($$self, params, $$value => $$invalidate(11, $params = $$value));
     	validate_store(crowdfunding, 'crowdfunding');
-    	component_subscribe($$self, crowdfunding, $$value => $$invalidate(0, $crowdfunding = $$value));
+    	component_subscribe($$self, crowdfunding, $$value => $$invalidate(1, $crowdfunding = $$value));
     	let { $$slots: slots = {}, $$scope } = $$props;
     	validate_slots('Donation', slots, []);
     	let amount, name, email, agree = false, contribute = 0;
     	getCrowdfunding($params.id);
 
     	async function handleForm(event) {
-    		$$invalidate(3, agree = false);
+    		$$invalidate(4, agree = false);
     		const newData = await getCrowdfunding($params.id);
     		newData.pledged = newData.pledged + parseInt(amount);
 
@@ -6222,19 +6228,24 @@ var app = (function () {
     		if (!~writable_props.indexOf(key) && key.slice(0, 2) !== '$$' && key !== 'slot') console_1.warn(`<Donation> was created with unknown prop '${key}'`);
     	});
 
+    	function input0_input_handler() {
+    		amount = this.value;
+    		$$invalidate(0, amount);
+    	}
+
     	function input1_input_handler() {
     		name = this.value;
-    		$$invalidate(1, name);
+    		$$invalidate(2, name);
     	}
 
     	function input2_input_handler() {
     		email = this.value;
-    		$$invalidate(2, email);
+    		$$invalidate(3, email);
     	}
 
     	function input3_change_handler() {
     		agree = this.checked;
-    		$$invalidate(3, agree);
+    		$$invalidate(4, agree);
     	}
 
     	$$self.$capture_state = () => ({
@@ -6257,11 +6268,11 @@ var app = (function () {
     	});
 
     	$$self.$inject_state = $$props => {
-    		if ('amount' in $$props) $$invalidate(10, amount = $$props.amount);
-    		if ('name' in $$props) $$invalidate(1, name = $$props.name);
-    		if ('email' in $$props) $$invalidate(2, email = $$props.email);
-    		if ('agree' in $$props) $$invalidate(3, agree = $$props.agree);
-    		if ('contribute' in $$props) $$invalidate(4, contribute = $$props.contribute);
+    		if ('amount' in $$props) $$invalidate(0, amount = $$props.amount);
+    		if ('name' in $$props) $$invalidate(2, name = $$props.name);
+    		if ('email' in $$props) $$invalidate(3, email = $$props.email);
+    		if ('agree' in $$props) $$invalidate(4, agree = $$props.agree);
+    		if ('contribute' in $$props) $$invalidate(5, contribute = $$props.contribute);
     	};
 
     	if ($$props && "$$inject" in $$props) {
@@ -6269,20 +6280,22 @@ var app = (function () {
     	}
 
     	$$self.$$.update = () => {
-    		if ($$self.$$.dirty & /*$crowdfunding*/ 1) {
+    		if ($$self.$$.dirty & /*$crowdfunding, amount*/ 3) {
     			if ($crowdfunding) {
-    				$$invalidate(4, contribute = Math.floor(parseInt(amount) / $crowdfunding.target * 100));
+    				$$invalidate(5, contribute = Math.floor(parseInt(amount) / $crowdfunding.target * 100));
     			}
     		}
     	};
 
     	return [
+    		amount,
     		$crowdfunding,
     		name,
     		email,
     		agree,
     		contribute,
     		handleForm,
+    		input0_input_handler,
     		input1_input_handler,
     		input2_input_handler,
     		input3_change_handler

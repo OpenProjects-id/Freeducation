@@ -109,7 +109,7 @@
                     Jumlah Donasi
                     <span class="color-light-red">**</span>
                   </label>
-                  <input type="text" name="amount" id="xs-donate-amount" class="form-control" required="true" placeholder="Rp. " />
+                  <input type="text" name="amount" id="xs-donate-amount" class="form-control" bind:value={amount} required="true" placeholder="Rp. " />
                 </div>
                 <!-- .xs-input-group END -->
                 <div class="xs-input-group">

@@ -2,6 +2,8 @@
 
 Freeducation adalah website scholarship crowdfunding yang bertujuan untuk membantu orang-orang yang terkendala dalam pendidikan dari sisi finansial
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/dbd7a9a7-b4ab-418f-a1da-f563c0595218/deploy-status)](https://app.netlify.com/sites/freeducation/deploys)
+
 # Tata Cara dan Aturan
 1. Melakukan fork repositori ke akun masing-masing dan mengclone repo fork tersebut
 2. Membuat branch baru di local dan push branch dengan nama yang sama ke repo fork tersebut

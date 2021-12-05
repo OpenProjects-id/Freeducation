@@ -6,7 +6,7 @@
   import Footer from "../components/Footer.svelte";
   import Loader from "../components/Loader.svelte";
 
-  let amount,
+  let amount = 0,
     name,
     email,
     agree = false,

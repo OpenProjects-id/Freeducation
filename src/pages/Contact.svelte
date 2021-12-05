@@ -37,27 +37,27 @@
               <h4>Kirimkan kami pesan</h4>
               <form action="#" method="POST" id="xs-contact-form" class="xs-contact-form contact-form-v2">
                 <div class="input-group">
-                  <input type="text" name="name" id="xs-name" class="form-control" placeholder="Enter Your Name....." />
+                  <input type="text" name="name" id="xs-name" class="form-control" placeholder="Masukkan Nama Anda....." />
                   <div class="input-group-append">
                     <div class="input-group-text"><i class="fa fa-user" /></div>
                   </div>
                 </div>
                 <!-- .input-group END -->
                 <div class="input-group">
-                  <input type="email" name="email" id="xs-email" class="form-control" placeholder="Enter Your Email....." />
+                  <input type="email" name="email" id="xs-email" class="form-control" placeholder="Masukkan Email Anda....." />
                   <div class="input-group-append">
                     <div class="input-group-text"><i class="fas fa-envelope" /></div>
                   </div>
                 </div>
                 <!-- .input-group END -->
                 <div class="input-group massage-group">
-                  <textarea name="massage" placeholder="Enter Your Message....." id="xs-massage" class="form-control" cols="30" rows="10" />
+                  <textarea name="massage" placeholder="Masukkan Pesan Anda....." id="xs-massage" class="form-control" cols="30" rows="10" />
                   <div class="input-group-append">
                     <div class="input-group-text"><i class="fa fa-pencil" /></div>
                   </div>
                 </div>
                 <!-- .input-group END -->
-                <button class="btn btn-success" type="submit" id="xs-submit">Kirim</button>
+                <button class="btn btn-primary text-white" type="submit" id="xs-submit">Kirim</button>
               </form>
               <!-- .xs-contact-form #xs-contact-form END -->
             </div>

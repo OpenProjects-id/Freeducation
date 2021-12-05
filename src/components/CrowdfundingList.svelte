@@ -3,8 +3,6 @@
     import { crowdfundings } from "../stores/data.js";
     import Loader from "./Loader.svelte";
   
-    let isModalOpen = false;
-  
     function calculateFunded(pledged, target) {
       return Math.round((1 / (target / pledged)) * 100);
     }

@@ -38,24 +38,22 @@
           body: JSON.stringify(newData),
         }
       );
-      console.log(res);
-      router.redirect('/success');
-      // const resMid = await fetch(`/.netlify/functions/payment`, {
-      //   method: "POST",
-      //   headers: {
-      //     "content-type": "application/json",
-      //   },
-      //   body: JSON.stringify({
-      //     id: $params.id,
-      //     amount: parseInt(amount),
-      //     name,
-      //     email,
-      //     donation,
-      //   }),
-      // });
-      // const midtransData = await resMid.json();
-      // console.log(midtransData);
-      // window.location.href = midtransData.url;
+      const resMid = await fetch(`/.netlify/functions/payment`, {
+        method: "POST",
+        headers: {
+          "content-type": "application/json",
+        },
+        body: JSON.stringify({
+          id: $params.id,
+          amount: parseInt(amount),
+          name,
+          email,
+          donation,
+        }),
+      });
+      const midtransData = await resMid.json();
+      console.log(midtransData);
+      window.location.href = midtransData.url;
     } catch (err) {
       console.log(err);
     }
@@ -111,7 +109,7 @@
                     Jumlah Donasi
                     <span class="color-light-red">**</span>
                   </label>
-                  <input type="text" name="amount" id="xs-donate-amount" class="form-control" bind:value={amount} required="true" placeholder="Rp. " />
+                  <input type="number" name="amount" id="xs-donate-amount" class="form-control" bind:value={amount} required="true" placeholder="Rp. " />
                 </div>
                 <!-- .xs-input-group END -->
                 <div class="xs-input-group">

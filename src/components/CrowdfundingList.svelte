@@ -1,8 +1,6 @@
 <script>
-    import { onMount, onDestroy, beforeUpdate, afterUpdate } from 'svelte';
-    import { fade, slide, fly } from "svelte/transition";
-    import { crowdfundings, crowdfunding } from "../stores/data.js";
-    import Modal from "./Modal.svelte";
+    import { fade,fly,slide } from "svelte/transition";
+    import { crowdfundings } from "../stores/data.js";
     import Loader from "./Loader.svelte";
   
     let isModalOpen = false;
@@ -37,10 +35,6 @@
   <style>
     .xs-list-with-content {
       font-size: 12px;
-    }
-    .show {
-      display: block;
-      background-color: rgba(0, 0, 0, 0.45);
     }
     .pledged {
       margin-right: 2em;
@@ -152,15 +146,3 @@
   </section>
   <!-- End popularCauses section -->
   
-  <!-- <div>
-    <h2>Daftar crowdfunding</h2>
-    {#if crowdfundings !== undefined}
-      <ul>
-        {#each crowdfundings as crowdfunding}
-          <li>{crowdfunding.title} - {crowdfunding.category}</li>
-        {/each}
-      </ul>
-    {:else}
-      <h5>Data belum tersedia</h5>
-    {/if}
-  </div> -->

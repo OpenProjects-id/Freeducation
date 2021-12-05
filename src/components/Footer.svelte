@@ -103,7 +103,7 @@
 					<div class="col-lg-3 col-md-6 px-5">
 							<div>
                                 <a href="/" class="xs-footer-logo">
-                                    <img src="assets/images/Footer_Logo.png" alt="">
+                                    <img src="/assets/images/Footer_Logo.png" alt="">
                                 </a>
                                 <p class="footer-caption">Freeducation adalah sebuah platform <i>open source</i> untuk membantu saudara-saudara kita yang ada di tanah air dari sisi finansial untuk mengenyam pendidikan.
                                    </p>

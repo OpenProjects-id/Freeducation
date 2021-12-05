@@ -10,6 +10,7 @@
     name,
     email,
     agree = false,
+    donation,
     contribute = 0;
 
   $: if ($crowdfunding) {
@@ -49,6 +50,7 @@
       //     amount: parseInt(amount),
       //     name,
       //     email,
+      //     donation,
       //   }),
       // });
       // const midtransData = await resMid.json();
@@ -125,6 +127,16 @@
                     <span class="color-light-red">**</span>
                   </label>
                   <input type="email" name="email" required="true" id="xs-donate-email" class="form-control" bind:value={email} placeholder="Masukkan Email Anda" />
+                </div>
+                <div class="xs-input-group">
+                  <label for="xs-donate-name">
+                    Nama Proyek Urun Dana
+                    <span class="color-light-red">**</span>
+                  </label>
+                  <input type="text" name="donation_name" id="xs-donate-name" class="form-control" bind:value={donation} required="true" placeholder="Masukkan Nama Proyek Urun Dana" />
+                  <p class="small">
+                    **CATATAN: Mohon masukkan nama proyek urun dana sesuai dengan yang ingin Anda donasikan. Ini untuk mempermudah kami dalam pencatatan dan juga penyaluran dana yang sudah terkumpul kepada penggalang dana.
+                  </p>
                 </div>
                 <div class="xs-input-group" id="xs-input-checkbox">
                   <input type="checkbox" name="agree" id="xs-donate-agree" bind:checked={agree}/>

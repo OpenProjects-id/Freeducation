@@ -29,7 +29,7 @@
             <div class="col-md-6 col-lg-3 text-center">
                 <div class="xs-service-promo">
                     <span><i class="fas fa-book-open"></i></span>
-                    <h5>Bantuan Buku <br>Untuk Siswa Yang Membutuhkan</h5>
+                    <h5>Bantuan Buku Untuk Siswa Yang Membutuhkan</h5>
                     <p>Buku adalah salah satu sumber belajar bagi banyak siswa-siswi di Indonesia, namun masih ada yang terkendala untuk membelinya. Freeducation ada untuk mengatasi masalah tersebut.</p>
                 </div><!-- .xs-service-promo END -->
             </div>

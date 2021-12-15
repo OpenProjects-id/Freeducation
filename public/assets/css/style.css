@@ -1306,7 +1306,7 @@ blockquote {
   .xs-service-promo span {
     color: #012C6D;
     display: inline-block;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-size: 4.28571em; }
   .xs-service-promo .color-orange {
     color: #f7a900; }
